@@ -258,7 +258,6 @@ class VI_mass(torch.nn.Module):
         return elbo
 
 
-torch.manual_seed(10)
 mdl_vi = VI_mass(nMC=16)
 optimizer = torch.optim.Adam(mdl_vi.parameters(), lr=0.05, betas=(0.9, 0.999))
 n_steps = 150
@@ -321,7 +320,7 @@ with pm.Model() as mass_pymc:
     idata = pm.sample(draws=1000,tune=1000)
     
 ##### NAF ####
-naf_mdl = flows.IAF_DSF(5, 16, 1, 2, activation=torch.nn.ELU(), num_ds_dim=16, num_ds_layers=2)
+naf_mdl = flows.IAF_DSF(5, 16, 1, 2, activation=torch.nn.ELU(), num_ds_dim=32, num_ds_layers=2)
 optimizer = torch.optim.Adam(naf_mdl.parameters(), lr=0.005, betas=(0.9, 0.999))
 
 # Track start time for training
