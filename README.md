@@ -22,11 +22,13 @@ This repository contains the code used to reproduce the simulation studies and r
 | `experiments_nuclear.py` | Nuclear mass prediction real-data analysis. |
 | `utils.py` | Shared helper functions used across experiments and model code. |
 
+### `simulation/`
+simulation data and results
+
 ### `R_code/`
 
 | File | Purpose |
 |---|---|
-| `R_code.Rproj` | RStudio project file for the R scripts in this folder. |
 | `Toy_data_LM.R` | R script for the toy linear regression example. |
 | `uscrime_R.R` | R script for the U.S. Crime example in R. |
 
