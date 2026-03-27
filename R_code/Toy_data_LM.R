@@ -1,8 +1,5 @@
 library(BAS)
 
-# Get the current working directory
-path <- "D:/Jeff/MSU/Research Project/Project 1/NAF_BMA"
-
 sort_order <- function(order) {
   # Define the fixed order
   fixed_order <- list(
