@@ -40,7 +40,6 @@ sort_order <- function(order) {
 ####################################
 ###### US Crime ####################
 ####################################
-path <- "D:/Jeff/MSU/Research Project/Project 1/code"
 #data(UScrime, package = "MASS")
 USCrime = read.csv(file.path(path, "Data", "USCrime.csv"))
 
